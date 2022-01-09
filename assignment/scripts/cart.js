@@ -17,12 +17,9 @@ function listItems(i) {
     console.log('listed items are : ', basket[i])
   }
   }
-
-
-
-
 console.log(listItems());
 
-function empty() {
-
+function empty(refreshList) {
+  refreshList = (basket.length = 0);
 }
+console.log(empty())

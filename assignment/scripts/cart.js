@@ -4,17 +4,21 @@ console.log('***** Cart Functions *****');
 
 let basket = ['orange','pumpkin','pineapple'];
 
-function addItem(item, basket) {
+
+function addItem(item) {
+  added = (basket.push(item));
   return true
 }
+console.log(addItem('kiwi'), basket);
 
-function listItems() {
-}
+
+function listItems(numbers) {
+  numbers = basket.length;
+      return numbers
+  }
+
+console.log(listItems());
 
 function empty() {
 
 }
-
-console.log(`Basket is ${basket}`);
-console.log('Adding apples (expect true)', addItem('apples'));
-console.log(`Basket is now ${basket}`);

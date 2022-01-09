@@ -12,10 +12,14 @@ function addItem(item) {
 console.log(addItem('kiwi'), basket);
 
 
-function listItems(numbers) {
-  numbers = basket.length;
-      return numbers
+function listItems(i) {
+  for (let i=0; i<basket.length; i++) {
+    console.log('listed items are : ', basket[i])
   }
+  }
+
+
+
 
 console.log(listItems());
 
